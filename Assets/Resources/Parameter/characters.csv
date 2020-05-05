@@ -1,0 +1,12 @@
+No,Name,Type,Att,Hp,Atk,Rec,Skill,SkillCost,refR,refW,refL,refS,refD
+1,ノーマル火,Normal,Fire,100,20,20,1,5,0,0,0,0,0
+2,ノーマル水,Normal,Water,100,22,22,2,5,0,0,0,0,0
+3,ノーマル草,Normal,Leaf,100,24,24,3,5,0,0,0,0,0
+4,ノーマル光,Normal,Shine,100,26,26,4,5,0,0,0,0,0
+5,ノーマル闇,Normal,Dark,100,28,28,5,5,0,0,0,0,0
+6,融合,Fusion,Non,100,30,30,6,10,0,0,0,0,0
+7,憑依,Possesion,Non,100,40,40,7,10,0,0,0,0,0
+8,召喚,Summon,Non,100,50,50,8,10,0,0,0,0,0
+9,変身,Transform,Non,100,60,60,9,10,0,0,0,0,0
+10,進化,Evolution,Non,100,70,70,10,10,0,0,0,0,0
+11,属性変化,Attribute,Non,100,80,80,11,10,0,0,0,0,0
