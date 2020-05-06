@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{ED92AE03-CF05-EE81-C41C-CCFF4D43E914}</ProjectGuid>
+    <ProjectGuid>{6E5BB66F-63F9-AAAC-7E0C-46DE9E6D88BF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -53,6 +53,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Common\Scripts\CsvLoader.cs" />
      <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleAudio.cs" />
      <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModulePhysics.cs" />
      <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModulePhysics2D.cs" />
@@ -66,22 +67,21 @@
      <Compile Include="Assets\Resources\Scripts\InGame\Mana.cs" />
      <Compile Include="Assets\Resources\Scripts\InGame\TapDrag.cs" />
      <Compile Include="Assets\Resources\Scripts\NonActive.cs" />
-     <Compile Include="Assets\Resources\Scripts\ParameterLoad.cs" />
      <None Include="Assets\Demigiant\DOTween\readme.txt" />
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>/Users/s09134/development/practice/practice_GW/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>/Users/s09134/development/git_practice/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>/Users/s09134/development/practice/practice_GW/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>/Users/s09134/development/git_practice/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>/Users/s09134/development/practice/practice_GW/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>/Users/s09134/development/git_practice/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>/Users/s09134/development/practice/practice_GW/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>/Users/s09134/development/git_practice/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.DataPrivacy">
- <HintPath>/Users/s09134/development/practice/practice_GW/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+ <HintPath>/Users/s09134/development/git_practice/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>/Applications/Unity/Hub/Editor/2018.4.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -287,20 +287,20 @@
  <Reference Include="UnityEngine.SpatialTracking">
  <HintPath>/Applications/Unity/Hub/Editor/2018.4.10f1/Unity.app/Contents/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
  </Reference>
- <Reference Include="Unity.Analytics.Tracker">
- <HintPath>/Users/s09134/development/practice/practice_GW/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Analytics.Editor">
- <HintPath>/Users/s09134/development/practice/practice_GW/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Analytics.StandardEvents">
- <HintPath>/Users/s09134/development/practice/practice_GW/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+ <Reference Include="CsvHelper">
+ <HintPath>/Users/s09134/development/git_practice/Assets/CsvHelper.dll</HintPath>
  </Reference>
  <Reference Include="DOTween">
- <HintPath>/Users/s09134/development/practice/practice_GW/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
+ <HintPath>/Users/s09134/development/git_practice/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
  </Reference>
- <Reference Include="CsvHelper">
- <HintPath>/Users/s09134/development/practice/practice_GW/Assets/CsvHelper.dll</HintPath>
+ <Reference Include="Unity.Analytics.Tracker">
+ <HintPath>/Users/s09134/development/git_practice/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Analytics.Editor">
+ <HintPath>/Users/s09134/development/git_practice/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Analytics.StandardEvents">
+ <HintPath>/Users/s09134/development/git_practice/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>/Applications/Unity/Hub/Editor/2018.4.10f1/Unity.app/Contents/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

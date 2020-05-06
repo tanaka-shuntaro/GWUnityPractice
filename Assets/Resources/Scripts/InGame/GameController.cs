@@ -15,8 +15,6 @@ public class GameController : MonoBehaviour
     private GameObject[] manaIcons;
 
     private Mana[] manascripts;
-
-    public ParameterLoad parameterLoader;
     private Character[] charaParameters;
 
     public Text hpMax;
@@ -46,10 +44,11 @@ public class GameController : MonoBehaviour
         characterIcon = resourceRequest_chara.asset as GameObject;
         manaIcon = resourceRequest_mana.asset as GameObject;
         TextAsset csv = resourceRequest_param_chara.asset as TextAsset;
-        var strReader = new StringReader(csv.text);
-        var csvReader = new CsvHelper.CsvReader(strReader, System.Globalization.CultureInfo.CreateSpecificCulture("ja-JP"));
-        csvReader.Configuration.RegisterClassMap<CharacterMapper>();
-        charaParameters = csvReader.GetRecords<Character>().ToArray();
+        // var strReader = new StringReader(csv.text);
+        // var csvReader = new CsvHelper.CsvReader(strReader, System.Globalization.CultureInfo.CreateSpecificCulture("ja-JP"));
+        // csvReader.Configuration.RegisterClassMap<CharacterMapper>();
+        // charaParameters = csvReader.GetRecords<Character>().ToArray();
+        (charaParameters,_) = CsvLoader.Reader<Character,CharacterMapper>(csv);
         yield return new WaitForSeconds (0.5f);
         Debug.Log("セットアップ開始！");
         SetUp();
